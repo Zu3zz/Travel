@@ -2,13 +2,13 @@
   <div>
     <div class="weekend-title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <div class="item-img-wrapper">
           <img :src="item.imgUrl" class="item-img">
-          <div class="item-info">
-            <p class="item-title">{{item.title}}</p>
-            <p class="item-desc">{{item.desc}}</p>
-          </div>
+        </div>
+        <div class="item-info">
+          <p class="item-title">{{item.title}}</p>
+          <p class="item-desc">{{item.desc}}</p>
         </div>
       </li>
     </ul>
@@ -19,25 +19,8 @@
 <script>
 export default {
   name: 'HomeWeekend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1606/85/c6b6bad1b977e.jpg_r_640x214_5c638941.jpg',
-        title: '北京野生动物园',
-        desc: '我不是北京野生动物园'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1606/85/c6b6bad1b977e.jpg_r_640x214_5c638941.jpg',
-        title: '北京野生动物园',
-        desc: '我不是北京野生动物园'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1606/85/c6b6bad1b977e.jpg_r_640x214_5c638941.jpg',
-        title: '北京野生动物园',
-        desc: '我不是北京野生动物园'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
@@ -45,16 +28,17 @@ export default {
 <style scoped lang="stylus">
   @import '~styles/mixins.styl'
   .weekend-title
-    margin-top: .2rem
     line-height: .8rem
     background: #eee
     text-indent: .2rem
+
   .item-img-wrapper
     overflow: hidden
     height: 0
-    padding-bottom: 53%
+    padding-bottom: 38%
     .item-img
       width: 100%
+
   .item-info
     padding: .1rem
     .item-title
