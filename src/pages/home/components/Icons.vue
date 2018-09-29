@@ -9,13 +9,13 @@
              <p class="icon-desc">{{item.desc}}</p>
           </div>
         </swiper-slide>
-      </swiper>>
+      </swiper>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'icons',
+  name: 'HomeIcons',
   data () {
     return {
       iconList: [{
@@ -76,10 +76,11 @@ export default {
 <style scoped lang="stylus">
   @import '~styles/varibles.styl'
   @import '~styles/mixins.styl'
-  .icons
-    overflow: hidden
+  .icons >>> .swiper-container
     height: 0
     padding-bottom: 50%
+  .icons
+    margin-top: .1rem
     .icon
       position: relative
       over-flow: hidden
