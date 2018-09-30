@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style scoped lang="stylus">
-  @import '~styles/varibles'
+  @import '~styles/varibles.styl'
   .header
     position: relative
     overflow: hidden
