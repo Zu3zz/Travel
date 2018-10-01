@@ -1,6 +1,16 @@
 # travel
 
-> A Vue.js project
+vue.js单页应用练手项目 仿照去哪儿网手机客户端开发 
+
+> A Vue.js project based on vue-cli
+
+scroll components: better-scroll@1.13.2
+
+swiper components: vue-awesome-swpier@2.6.7
+
+ajax components: axios@0.18.0
+
+css components: stylus@0.54.5 stylus-loader@3.0.2
 
 ## Build Setup
 
@@ -14,8 +24,5 @@ npm run dev
 # build for production with minification
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
