@@ -6,7 +6,7 @@
           v-for="(item, index) in imgs"
           :key="index"
         >
-          <img class="gallary-img" :src="item"/>
+          <img class="gallary-img" :src="item" />
         </swiper-slide>
         <div class="swiper-pagination"  slot="pagination"></div>
       </swiper>
@@ -63,7 +63,7 @@ export default {
       padding-bottom: 100%
       .gallary-img
         width: 100%
-    .swiper-pagination
-      color: #fff
-      bottom: -1rem
+      .swiper-pagination
+        color: #fff
+        bottom: -1rem
 </style>
